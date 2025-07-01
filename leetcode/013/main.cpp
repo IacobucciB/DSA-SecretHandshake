@@ -7,13 +7,13 @@ public:
     int romanToInt(std::string s) {
 
 	std::map<char, int> roman_values;
-	roman_values['I']= 1;
-	roman_values['V']= 5;
-	roman_values['X']= 10;
-	roman_values['L']= 50;
-	roman_values['C']= 100;
-	roman_values['D']= 500;
-	roman_values['M']= 1000;
+	roman_values['I'] = 1;
+	roman_values['V'] = 5;
+	roman_values['X'] = 10;
+	roman_values['L'] = 50;
+	roman_values['C'] = 100;
+	roman_values['D'] = 500;
+	roman_values['M'] = 1000;
 
 	int value;
 	int total = 0;
