@@ -2,11 +2,13 @@
 #include <string>
 #include <map>
 
+using namespace std;
+
 class Solution {
 public:
-    int romanToInt(std::string s) {
+    int romanToInt(string s) {
 
-	std::map<char, int> roman_values;
+	map<char, int> roman_values;
 	roman_values['I'] = 1;
 	roman_values['V'] = 5;
 	roman_values['X'] = 10;
@@ -37,17 +39,17 @@ int main(void)
 {
     Solution sol;
 
-    std::string s1 = "III";
-    std::string s2 = "IV";
-    std::string s3 = "IX";
-    std::string s4 = "LVIII";
-    std::string s5 = "MCMXCIV";
+    string s1 = "III";
+    string s2 = "IV";
+    string s3 = "IX";
+    string s4 = "LVIII";
+    string s5 = "MCMXCIV";
 
-    std::cout << "Roman numeral: " << s1 << " => Integer: " << sol.romanToInt(s1) << std::endl;
-    std::cout << "Roman numeral: " << s2 << " => Integer: " << sol.romanToInt(s2) << std::endl;
-    std::cout << "Roman numeral: " << s3 << " => Integer: " << sol.romanToInt(s3) << std::endl;
-    std::cout << "Roman numeral: " << s4 << " => Integer: " << sol.romanToInt(s4) << std::endl;
-    std::cout << "Roman numeral: " << s5 << " => Integer: " << sol.romanToInt(s5) << std::endl;
+    cout << "Roman numeral: " << s1 << " => Integer: " << sol.romanToInt(s1) << endl;
+    cout << "Roman numeral: " << s2 << " => Integer: " << sol.romanToInt(s2) << endl;
+    cout << "Roman numeral: " << s3 << " => Integer: " << sol.romanToInt(s3) << endl;
+    cout << "Roman numeral: " << s4 << " => Integer: " << sol.romanToInt(s4) << endl;
+    cout << "Roman numeral: " << s5 << " => Integer: " << sol.romanToInt(s5) << endl;
     
     return 0;
 }
