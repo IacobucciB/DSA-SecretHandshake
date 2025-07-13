@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 class Solution {
 public:
-    std::vector<int> twoSum(std::vector<int> nums, int target) {
+    vector<int> twoSum(vector<int> nums, int target) {
 	int i, j;
 	for (i = 0; i < nums.size(); ++i) {
 	    for (j = i + 1; j < nums.size(); ++j) {
@@ -19,9 +21,9 @@ public:
 int main(void)
 {
     Solution sol;
-    std::vector<int> nums = {2, 7, 11, 15};
+    vector<int> nums = {2, 7, 11, 15};
     int target = 9;
-    std::vector<int> res = sol.twoSum(nums, target);
-    std::cout << res[0] << ", "<< res[1] << std::endl;
+    vector<int> res = sol.twoSum(nums, target);
+    cout << res[0] << ", "<< res[1] << endl;
     return 0;
 }
