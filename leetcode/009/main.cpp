@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -33,10 +35,10 @@ int main(void)
     int c = 10;
     int d = 1234567899;
     
-    std::cout << sol.isPalindrome(a) << std::endl;
-    std::cout << sol.isPalindrome(b) << std::endl;
-    std::cout << sol.isPalindrome(c) << std::endl;
-    std::cout << sol.isPalindrome(d) << std::endl;
+    cout << sol.isPalindrome(a) << endl;
+    cout << sol.isPalindrome(b) << endl;
+    cout << sol.isPalindrome(c) << endl;
+    cout << sol.isPalindrome(d) << endl;
     
     return 0;
 }
