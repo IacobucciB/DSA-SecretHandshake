@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 int sum_of_multiples(int limit) {
     int total_sum = 0;
 
@@ -14,6 +16,6 @@ int sum_of_multiples(int limit) {
 
 int main() {
     int result = sum_of_multiples(1000);
-    std::cout << result << std::endl;
+    cout << result << endl;
     return 0;
 }
