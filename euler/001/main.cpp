@@ -2,11 +2,14 @@
 
 using namespace std;
 
-int sum_of_multiples(int limit) {
+int sum_of_multiples(int limit)
+{
     int total_sum = 0;
 
-    for (int x = 0; x < limit; ++x) {
-        if (x % 3 == 0 || x % 5 == 0) {
+    for (int x = 0; x < limit; ++x)
+    {
+        if (x % 3 == 0 || x % 5 == 0)
+        {
             total_sum += x;
         }
     }
@@ -14,7 +17,8 @@ int sum_of_multiples(int limit) {
     return total_sum;
 }
 
-int main() {
+int main()
+{
     int result = sum_of_multiples(1000);
     cout << result << endl;
     return 0;
